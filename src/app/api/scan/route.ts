@@ -58,7 +58,7 @@ export async function POST(request: Request) {
     const result = await runDomainScan(domain);
     const [emailResult, listResult] = await Promise.all([
       sendReportEmail(email, result),
-      subscribe ? addToEmailList(email) : Promise.resolve({ ok: true }),
+      subscribe ? addToEmailList(email) : Promise.resolve({ ok: true, error: undefined }),
     ]);
     return NextResponse.json({
       ...result,
