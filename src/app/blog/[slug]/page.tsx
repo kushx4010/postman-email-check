@@ -68,6 +68,24 @@ export default async function BlogPostPage({ params }: Props) {
               ← All posts
             </Link>
           </div>
+
+          <div className="mt-12 p-6 sm:p-8 rounded-2xl border border-neutral-200 bg-neutral-100/50">
+            <h2 className="font-display text-xl sm:text-2xl font-semibold text-neutral-900">
+              Is your email landing where it should?
+            </h2>
+            <p className="mt-2 text-neutral-600">
+              Instant spam risk check for your email provider or your own domain.
+            </p>
+            <p className="mt-1 text-sm text-neutral-500">
+              No database, no sign-up.
+            </p>
+            <Link
+              href="/"
+              className="mt-4 inline-flex items-center justify-center py-3 px-6 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors"
+            >
+              Check and fix
+            </Link>
+          </div>
         </div>
       </article>
 
